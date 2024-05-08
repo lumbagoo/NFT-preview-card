@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  margin-top: 2em;
+  padding: 2em;
+  width: 400px;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+}
+.card .hero {
+  width: 100%;
+  border-radius: 10px;
+}
+.card .title {
+  font-size: 2.2rem;
+  padding: 1em 0;
+}
+.card .info {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+  opacity: 0.7;
+}
+.card .wallet {
+  display: flex;
+  padding: 3em 0;
+  justify-content: space-between;
+}
+.card .wallet .balance {
+  display: flex;
+}
+.card .wallet .balance .eth {
+  margin-right: 1em;
+}
+.card .wallet .balance .eth-balance {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+.card .wallet .time-left {
+  display: flex;
+}
+.card .wallet .time-left .clock {
+  margin-right: 1em;
+}
+.card .wallet .time-left .days {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+.card hr {
+  opacity: 0.1;
+}
+.card .person {
+  display: flex;
+  align-items: center;
+}
+.card .person .avatar {
+  padding: 2em 0;
+  width: 10%;
+}
+.card .person .owner {
+  margin-left: 1em;
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+.card .person .owner span {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

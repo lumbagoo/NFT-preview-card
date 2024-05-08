@@ -1,0 +1,92 @@
+@use './colors.scss' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Outfit', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $very-dark-blue;
+	color: $white;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	margin-top: 2em;
+	padding: 2em;
+	width: 400px;
+	border-radius: 10px;
+	background-color: $very-dark-bg;
+	.hero {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.title {
+		font-size: 2.2rem;
+		padding: 1em 0;
+	}
+	.info {
+		font-size: 1.8rem;
+		color: $soft-blue;
+		opacity: 0.7;
+	}
+	.wallet {
+		display: flex;
+		padding: 3em 0;
+		justify-content: space-between;
+		.balance {
+			display: flex;
+			.eth {
+				margin-right: 1em;
+			}
+			.eth-balance {
+				font-size: 1.8rem;
+				color: $soft-blue;
+			}
+		}
+		.time-left {
+			display: flex;
+			.clock {
+				margin-right: 1em;
+			}
+			.days {
+				font-size: 1.8rem;
+				color: $soft-blue;
+			}
+		}
+	}
+	hr {
+		opacity: 0.1;
+	}
+
+	.person {
+		display: flex;
+		align-items: center;
+		.avatar {
+			padding: 2em 0;
+			width: 10%;
+		}
+		.owner {
+			margin-left: 1em;
+			font-size: 1.8rem;
+			color: $soft-blue;
+			
+			span {
+				color: $white;
+				
+			}
+		}
+	}
+}
